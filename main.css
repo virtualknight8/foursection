@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    padding:20px 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width:1100px;
+}
+
+header{
+    margin: 20px;
+    text-align: center;
+}
+
+.scontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+}
+
+.card{
+    background-color: white;
+    position: relative;
+   
+}
+
+.card1{
+    margin:12% 3% 0 3%;
+    padding: 20px;
+    max-height: 250px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+}
+
+.card3{
+    margin:12% 3% 0 3%;
+    padding: 20px;
+    max-height: 250px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+  
+.card1,.card3{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.card1,.card2,.card3{
+    width:30%;
+   
+}
+
+.card21{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card22{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card21,.card22{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-height: 250px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 05px lightgray;
+}
+
+span{
+    font-weight: 40;
+}
+
+h1{
+   font-weight: 600;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+h1,h2{
+    color: hsl(234, 12%, 34%);
+}
+header p{
+    font-weight: 400;
+}
+p{
+   margin-bottom: 100px; 
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+img{
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    
+}
+
+@media only screen and (max-width:700px){
+    .scontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card{
+        margin: 20px auto 10px auto;
+       /* min-height: 200px*/
+    }
+
+    .card1{
+        margin-bottom: 0;
+        
+    }   
+    
+    .card2{
+        
+    }
+    
+    .card3{
+        margin-top: 0;
+    }
+    
+    .card1,.card2,.card3{
+           max-width: 280px;
+           width: 100%;         
+}
+    
+    .card21{
+        
+    }
+    
+    .card22{
+        
+    }
+    .card21,.card22{
+        width: 100%;
+        /*min-height: 200px;*/
+        margin-bottom: 20px;
+        
+    }
+}
